@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#000000"/>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
         </Head>
-        <body className="relative w-screen bg-[url(/bg2.jpg)] bg-contain">
+        <body className="relative w-full bg-white">
           <Main />
           <NextScript />
         </body>
