@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
       <Html lang="en" className="">
         <Head>
           <meta charSet="UTF-8" />
-        
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
@@ -16,8 +15,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#000000"/>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
         </Head>
-        <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
-          <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-black"></div>
+        <body className="relative w-screen bg-[url(/bg2.jpg)] bg-contain">
           <Main />
           <NextScript />
         </body>
