@@ -10,11 +10,11 @@ export default function Home() {
     return(
     <>
         <div className="h-[100vh] max-w-7xl mx-auto shadow-xl shadow-black">
-            <div className="h-[50vh] bg-[url(/bg.jpeg)] bg-center bg-cover bg-top bg-no-repeat pt-8" > 
+            <div className="h-[75vh] md:h-[50vh] bg-[url(/bg.jpeg)] bg-center bg-cover bg-top bg-no-repeat pt-8" > 
                 <img src="/transBG.png" className="bg-white m-auto w-64 shadow-xl rounded-b-full border-4 border-[#EEB970]"></img>
             </div>
             <div className="md:flex font-black h-[50vh] bg-white">
-                <div className="w-1/3 z-50 -mt-16 ml-8 -pt-16 shadow-xl shadow-black overflow-hidden">
+                <div className="md:w-1/3 z-50 -mt-16 md:ml-8 -pt-16 shadow-xl shadow-black overflow-hidden">
                     <h1 className="text-5xl text-white mx-auto bg-[#BF0603] p-6 rounded-t-xl w-full text-center"> NOLA ✈︎ ROC</h1>
                     <div className="bg-white text-black h-full p-6 pl-6">
                         <h1> Name: </h1>
@@ -38,7 +38,7 @@ export default function Home() {
                         <p className="font-normal mb-2"> Email: contact@frenchmanstreetrochester.com</p>
                     </div>
                 </div>
-                <div className="-ml-1 w-1/3 bg-[#EEB970] backdrop-blur p-6">
+                <div className="-ml-1 md:w-1/3 bg-[#EEB970] backdrop-blur p-6">
                     <div className="w-full">
                         <h1 className="text-3xl font-black"> Rochester&apos;s Spot For Authentic Creole Cuisine!</h1>
                         <p className="mt-6 text-sm">Step into Frenchman Street and immerse yourself in the lively ambiance of a New Orleans jazz club. The rustic decor, adorned with Mardi Gras colors and jazz-inspired art, creates an inviting and energetic space. Whether you&apos;re enjoying a meal with friends or sipping on a classic cocktail at the bar, our restaurant embodies the vibrant and welcoming spirit of the French Quarter. </p>
@@ -46,7 +46,7 @@ export default function Home() {
                         <img src="/food.jpg" className="w-full mt-6 rounded-xl shadow-xl shadow-black/50"></img>
                     </div>
                 </div>
-                <div className="-ml-1 w-1/3 bg-[#325091] text-white backdrop-blur p-6">
+                <div className="-ml-1 md:w-1/3 bg-[#325091] text-white backdrop-blur p-6">
                     <div className="w-full">
                         <img src="/food2.jpg" className="w-full mt-6 rounded-xl mb-6 shadow-xl shadow-black/50"></img>
                         <h1 className="text-3xl font-black"> Jazz Up Your Dining Experience! </h1>
