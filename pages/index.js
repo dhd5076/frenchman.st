@@ -33,6 +33,7 @@ export default function Home() {
                     <div className="text-black p-6 pl-6 font-serif bg-white">
                         <p className="font-serif text-2xl mb-2"> Frenchman Street</p>
                         <p className="mb-4 leading-5 font-serif font-thin indent-4"> Welcome to Frenchman Street, an authentic taste of New Orleans nestled in the heart of Downtown Rochester, NY. Our culinary journey is inspired by the vibrant spirit of the famous Frenchman Street, bringing the soulful flavors of Creole and Cajun cuisine to Upstate New York. Immerse yourself in the lively atmosphere of a New Orleans jazz club, indulge in classic dishes like gumbo and jambalaya, and let the rhythms of jazz transport you to the lively streets of the Big Easy. Join us and experience the essence of Louisiana right here in Rochester!</p>
+                        <img src="/place.jpg" className="mb-4"/>
                         <div className="lg:flex mb-4 justify-between">
                             <div>
                                 <h1> Address: </h1>
@@ -68,11 +69,11 @@ export default function Home() {
                 <div className="text-white backdrop-blur lg:mr-6 lg:w-1/3 w-full pb-6 pt-6">
                     <div className="md:rounded-xl w-full md:flex lg:block">
                         <div className="w-full md:w-1/2 lg:w-full">
-                            <img src="/food2.jpg" className="pr-6 md:pr-0 pl-6 mb-6"></img>
+                            <img src="/food2.jpg" className="h-[75vh] object-cover w-full pr-6 md:pr-0 pl-6 mb-6"></img>
                         </div>
                         <div className="w-full md:w-1/2 lg:w-full">
-                            <h1 className="text-xl font-black mb-4 px-6 font-serif"> A Culinary Odyssey: From NOLA to Rochester </h1>
-                            <p className="text-lg px-6"> Discover the culinary magic of our Head Chef at Frenchman Street, whose journey from the vibrant streets of New Orleans to the heart of Rochester&apos;s Frenchman Street has shaped a tantalizing fusion of flavors. With expertise garnered in the lively food scene of New Orleans, our chef brings the soulful essence of Cajun and Creole cuisine to your plate, infusing it with a touch of Rochester&apos;s local charm. Join us for an unforgettable dining experience that embodies the best of both worlds, a testament to our chef&apos;s passion and culinary artistry. </p>
+                            <h1 className="text-2xl font-black mb-4 px-6 font-serif"> A Culinary Odyssey: From NOLA to Rochester </h1>
+                            <p className="text-lg px-6 md:pl-6 md:pr-0"> Discover the culinary magic of our Head Chef at Frenchman Street, whose journey from the vibrant streets of New Orleans to the heart of Rochester&apos;s Frenchman Street has shaped a tantalizing fusion of flavors. With expertise garnered in the lively food scene of New Orleans, our chef brings the soulful essence of Cajun and Creole cuisine to your plate, infusing it with a touch of Rochester&apos;s local charm. Join us for an unforgettable dining experience that embodies the best of both worlds, a testament to our chef&apos;s passion and culinary artistry. </p>
                             <div className='w-full flex pr-6'>
                                 <button href="/events" className="mt-4 px-4 py-2 ml-auto bg-black text-white"> Learn More</button>
                             </div>
@@ -80,13 +81,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="md:pt-32 p-6  font-serif bg-white">
+            <div className="0-omd:pt-32 p-6  font-serif bg-white">
                 <h2 className="text-6xl mb-10 border-b-2 border-black pb-2"> MENU </h2>
                 <div className="md:flex md:space-x-6 space-y-6 md:space-y-0 pb-6">
                     <div className=" font-semibold">
                         <h3 className="mb-6 text-2xl"> Appetizers</h3>
                         <div>
-                            <span className="flex justify-between">
+                            <span className="flex justify-between border-b-2 border-black border-dotted">
                                 <h4 className="text-xl font-normal uppercase"> Jambalaya </h4>
                                 <span> $15.99</span>
                             </span>
@@ -98,7 +99,7 @@ export default function Home() {
                     <div className="font-semibold">
                         <h3 className="mb-6 text-2xl"> Appetizers</h3>
                         <div>
-                            <span className="flex justify-between">
+                            <span className="flex justify-between border-b-2 border-black border-dotted">
                                 <h4 className="text-xl font-normal uppercase"> Jambalaya </h4>
                                 <span> $15.99</span>
                             </span>
@@ -110,7 +111,7 @@ export default function Home() {
                     <div className="font-semibold">
                         <h3 className="mb-6 text-2xl"> Appetizers</h3>
                         <div>
-                            <span className="flex justify-between">
+                            <span className="flex justify-between border-b-2 border-black border-dotted">
                                 <h4 className="text-xl font-normal uppercase"> Jambalaya </h4>
                                 <span> $15.99</span>
                             </span>
@@ -122,7 +123,7 @@ export default function Home() {
                     <div className="font-semibold">
                         <h3 className="mb-6 text-2xl"> Appetizers</h3>
                         <div>
-                            <span className="flex justify-between">
+                            <span className="flex justify-between border-b-2 border-black border-dotted">
                                 <h4 className="text-xl font-normal uppercase"> Jambalaya </h4>
                                 <span> $15.99</span>
                             </span>
@@ -132,6 +133,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="w-full p-4 text-center text-white bg-black">
+                <span className="text-center w-full block">&copy; 2023 Frenchman Street</span>
+                <span className="text-xs"> Made With ❤️ By <a className="underline" href="https://dylandunn.me">Dylan Dunn</a></span>
             </div>
         </div>
     </>
