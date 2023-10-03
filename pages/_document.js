@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
         </Head>
-        <body className="relative w-full bg-white">
+        <body className="bg-no-repeat bg-fill bg-cover bg-center md:bg-fixed bg-[url(/bg2.jpg)] max-h-[100vh]">
           <Main />
           <NextScript />
         </body>

@@ -5,7 +5,7 @@ import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091] border-y-4 border-[#EEB970] text-white z-50">
+    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091]/75 text-white z-50">
       <div className="md:hidden">
         <MenuAlt1 className="w-8 h-8" />
       </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <Link href="/contact" className="bg-[#BF0603] inline rounded-full px-4 py-2 items-center">
+        <Link href="/contact" className="bg-[#BF0603]/90 inline px-4 py-2 items-center">
             <span className="block text-lg font-bold items-center" >
               Order Online
             </span>
