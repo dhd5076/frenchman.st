@@ -67,7 +67,7 @@ export default function Home() {
                         </div>
                         <div className="w-full md:w-1/2 lg:w-full">
                             <h1 className="text-xl font-black mb-4 px-6 font-serif"> A Culinary Odyssey: From NOLA to Rochester </h1>
-                            <p className="text-lg px-6"> Discover the culinary magic of our Head Chef at Frenchman Street, whose journey from the vibrant streets of New Orleans to the heart of Rochester's Frenchman Street has shaped a tantalizing fusion of flavors. With expertise garnered in the lively food scene of New Orleans, our chef brings the soulful essence of Cajun and Creole cuisine to your plate, infusing it with a touch of Rochester's local charm. Join us for an unforgettable dining experience that embodies the best of both worlds, a testament to our chef's passion and culinary artistry. </p>
+                            <p className="text-lg px-6"> Discover the culinary magic of our Head Chef at Frenchman Street, whose journey from the vibrant streets of New Orleans to the heart of Rochester&apos;s Frenchman Street has shaped a tantalizing fusion of flavors. With expertise garnered in the lively food scene of New Orleans, our chef brings the soulful essence of Cajun and Creole cuisine to your plate, infusing it with a touch of Rochester&apos;s local charm. Join us for an unforgettable dining experience that embodies the best of both worlds, a testament to our chef&apos;s passion and culinary artistry. </p>
                             <div className='w-full flex pr-6'>
                                 <button href="/events" className="mt-4 px-4 py-2 ml-auto bg-black text-white"> Learn More</button>
                             </div>
@@ -86,7 +86,7 @@ export default function Home() {
                                 <span> $15.99</span>
                             </span>
                             <p className="text-normal text-normal font-thin leading-2 pt-2 italic">
-                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it's a Cajun classic that's sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
+                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it&apos;s a Cajun classic that&apos;s sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
                             </p>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function Home() {
                                 <span> $15.99</span>
                             </span>
                             <p className="text-normal text-normal font-thin leading-2 pt-2 italic">
-                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it's a Cajun classic that's sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
+                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it&apos;s a Cajun classic that&apos;s sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
                             </p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ export default function Home() {
                                 <span> $15.99</span>
                             </span>
                             <p className="text-normal text-normal font-thin leading-2 pt-2 italic">
-                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it's a Cajun classic that's sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
+                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it&apos;s a Cajun classic that&apos;s sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
                             </p>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export default function Home() {
                                 <span> $15.99</span>
                             </span>
                             <p className="text-normal text-normal font-thin leading-2 pt-2 italic">
-                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it's a Cajun classic that's sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
+                            Our mouthwatering Jambalaya is a celebration of flavors that transport you straight to the heart of New Orleans. A harmonious blend of spicy and savory, this dish features tender chunks of chicken, succulent shrimp, and spicy Andouille sausage, all simmered to perfection in a rich Creole tomato sauce. Served over a bed of fragrant rice and garnished with fresh green onions, it&apos;s a Cajun classic that&apos;s sure to satisfy your cravings for a taste of the Bayou. Come experience the true essence of NOLA right here at our restaurant!
                             </p>
                         </div>
                     </div>
