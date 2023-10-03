@@ -20,6 +20,11 @@ export default function Home() {
                             alt="Frenchman Street Logo"
                         />
                     </div>
+                    <div className="bottom-16 w-full text-center mx-auto p-8 z-50 text-white-500 absolute mx-auto">
+                        <button className="py-4 px-4 bg-white/75 text-black font-semibold">
+                            View Menu
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="lg:flex justify-between backdrop-blur font-black text-white h-1/2 bg-gradient-to-tr from-slate-900/50 to-slate-500/75 lg:pl-6">
@@ -75,7 +80,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="h-[100vh] md:pt-32 p-6  font-serif bg-white">
+            <div className="md:pt-32 p-6  font-serif bg-white">
                 <h2 className="text-6xl mb-10 border-b-2 border-black pb-2"> MENU </h2>
                 <div className="md:flex md:space-x-6 space-y-6 md:space-y-0 pb-6">
                     <div className=" font-semibold">
