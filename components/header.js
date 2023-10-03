@@ -5,8 +5,8 @@ import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091] shadow-xl border-y-4 border-[#EEB970] text-white z-50">
-      <div className="lg:hidden">
+    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091] border-y-4 border-[#EEB970] text-white z-50">
+      <div className="md:hidden">
         <MenuAlt1 className="w-8 h-8" />
       </div>
       <div className="hidden container mx-auto md:flex justify-between  items-center">

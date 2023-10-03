@@ -14,6 +14,8 @@ export default class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#000000"/>
           <meta name="theme-color" content="#000000"/>
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
         </Head>
         <body className="relative w-full bg-white">
           <Main />
