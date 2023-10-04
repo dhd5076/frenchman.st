@@ -5,7 +5,7 @@ import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091]/75 text-white z-50">
+    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091] text-white z-50">
       <div className="md:hidden">
         <MenuAlt1 className="w-8 h-8" />
       </div>
