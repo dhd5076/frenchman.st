@@ -1,27 +1,28 @@
-import Link from 'next/link';
-/*  https://coolors.co/325091-fffffe-28965a-bf0603-eeb970 */
-
 import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full text-white flex bg-accent z-50" id="navbar">
-      <img src="/logo/PrimaryLogo.svg" className="h-[16rem] -my-16">
-      </img>
-      <div className="hidden mx-auto h-32 md:flex justify-between items-center mr-16">
-        <div className="md:flex space-x-16 text-xl font-thin rosewood-font items-center">
-          <Link href="/menu">
+    <nav className="fixed top-0 left-0 w-full bg-accent text-white z-50 shadow-md">
+      <div className="container mx-auto flex rosewood-font justify-between items-center py-4">
+        <a href="/" className="text-3xl">
+          Frenchman Street
+        </a>
+        <div className="hidden md:flex space-x-6 text-lg">
+          <a href="/menu" className="hover:text-accent transition duration-300 ease-in-out">
             Menu
-          </Link>
-          <Link href="/about">
+          </a>
+          <a href="/about" className="hover:text-accent transition duration-300 ease-in-out">
             About Us
-          </Link>
-          <Link href="/events">
+          </a>
+          <a href="/events" className="hover:text-accent transition duration-300 ease-in-out">
             Events
-          </Link>
-          <Link href="/contact">
+          </a>
+          <a href="/contact" className="hover:text-accent transition duration-300 ease-in-out">
             Contact
-          </Link>
+          </a>
+        </div>
+        <div className="md:hidden">
+          <MenuAlt1 className="h-8 w-8 cursor-pointer" />
         </div>
       </div>
     </nav>
