@@ -5,7 +5,7 @@ import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full text-white flex bg-accent" id="navbar">
+    <nav className="fixed top-0 left-0 w-full text-white flex bg-accent z-50" id="navbar">
       <img src="/logo/PrimaryLogo.svg" className="h-[16rem] -my-16">
       </img>
       <div className="hidden mx-auto h-32 md:flex justify-between items-center mr-16">
