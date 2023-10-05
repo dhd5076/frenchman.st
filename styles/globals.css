@@ -19,6 +19,11 @@ p {
   font-family: 'Playfair Display';
 }
 
+@font-face {
+  font-family: 'Rosewood';
+  src: url('/rosewood.woff') format('woff');
+}
+
 .offscreen-container {
   position: fixed;
   bottom: -100%; /* Initially position offscreen */
@@ -37,4 +42,9 @@ p {
 
 .font-consolas {
   font-family: Consolas, monospace;
+}
+
+.rosewood-font {
+  font-family: 'Rosewood', cursive;
+  /* Use the 'Rosewood' font-family defined above and specify a fallback font if needed */
 }

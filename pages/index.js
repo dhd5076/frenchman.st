@@ -2,6 +2,16 @@ import React, { useEffect, useState } from 'react';
 
 export default function Home() {
 
+    const [showScroll, setShowScroll] = useState(true);
+
+    const scrollToElementById = (elementId) => {
+        const element = document.getElementById(elementId);
+      
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -11,83 +21,28 @@ export default function Home() {
     return(
     <>
         <div className="h-auto w-full shadow-black">
-            <div className={`transition-all pt-16 w-full duration-1000`}>
-                <div className="flex">
-                    <div className={`transition-all duration-100`}>
-                        <img
-                            src="/transBG.png"
-                            className="bg-white object-cover p-6 h-[50vh] md:shadow-black"
-                            alt="Frenchman Street Logo"
-                        />
-                    </div>
-                    <div className="relative flex-grow">
-                        <img src="/bg2.jpg" className="h-[50vh] w-full object-cover" alt="Background Image" />
-                        <h1 className="absolute top-0 bottom-0 left-0 right-0 text-white text-4xl text-center flex flex-col justify-center items-center p-4">
-                            <span className="font-sans font-black text-7xl block">NOLA TO ROC</span>
-                        </h1>
-                    </div>
+            <div className={`transition-all pt-16 duration-1000 bg-black/75`}>
+                <img src="/logo/Frenchman Street Alternate Logo.png" className="h-[100vh] mx-auto object-contain">
+                </img>
+                <div className="text-white w-full -mt-32 pb-16 text-center relative bottom-0 bg-gradient-to-b from-black/0 to-black/25">
+                    <span className={`rounded-full transition-all duration-1000 border-2 p-4 fas fa-chevron-down bg-white/25 animate-bounce ${showScroll ? 'opacity-100' : 'opacity-0'}`} onClick={() => { scrollToElementById("first"); setShowScroll(false) }}></span>
                 </div>
             </div>
-            <div className="lg:flex justify-between backdrop-blur font-black font-sans xl:h-[100vh] bg-[#EEB970] text-black">
-                <div className={`lg:w-1/3 relative transition-all duration-1000`}>
-                    <div className="">
-                        <img src="/place.jpg" className="w-full object-cover xl:h-[50vh]"/>
-                        <div className="p-6">
-                            <div className="font-sans border-b-4 border-[#325091] pb-6">
-                                <p className="font-sans text-2xl"> Frenchman Street</p>
-                                <p className="font-sans text-sm"> Welcome to Frenchman Street, an authentic taste of New Orleans nestled in the heart of Downtown Rochester, NY. Our culinary journey is inspired by the vibrant spirit of the famous Frenchman Street, bringing the soulful flavors of Creole and Cajun cuisine to Upstate New York. Immerse yourself in the lively atmosphere of a New Orleans jazz club, indulge in classic dishes like gumbo and jambalaya, and let the rhythms of jazz transport you to the lively streets of the Big Easy. Join us and experience the essence of Louisiana right here in Rochester!</p>
-                            </div>    
-                            <div className="lg:flex my-4 justify-between">
-                                <div>
-                                    <h1> Address: </h1>
-                                    <p className="font-normal font-sans text-lg mb-2"> Mercantile On Main <br/> 240 E Main St.</p>
-                                </div>
-                                <div>
-                                    <h1> Hours: </h1>
-                                    <p className="font-sans font-normal text-lg"> 
-                                    Monday-Friday <br/> 
-                                    11:30am - 8:00pm</p>
-                                </div>
-                            </div>
-                            <h1 className="text-lg font-sans border-t-4 border-[#325091] pt-2"> Contact: </h1>
-                            <p className="font-sans font-normal">
-                                Phone: 
-                                <a href="tel:555-345-7890" className="text-[#325091] font-bold"> 555-345-7890</a>
-                            </p>
-                            <p className="font-sans font-normal">
-                                Email: 
-                                <a href="mailto:contact@frenchman.st" className="text-[#325091] font-bold"> contact@frenchman.st</a>
-                            </p>
-                        </div>
+            <div className="flex bg-primary h-[100vh]" id="first">
+                <div className="w-1/2 bg-white">
+                    <img src="bg.jpeg" className="w-full h-full object-cover">
+                    </img>
+                </div>
+                <div className="w-1/2 p-8 rosewood-font flex flex-col items-center justify-center text-left">
+                    <div className="border-b-2 pb-6 w-full">
+                        <h2 className="text-3xl text-white mb-2">Welcome to the Taste of New Orleans</h2>
+                        <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of [Your City]. Our New Orleans-inspired restaurant brings you a taste of Louisiana's rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
+                        <button className="my-4 bg-secondary block px-4 py-4 ml-auto"> View Menu </button>
+                    </div>
+                </div>
 
-                    </div>
-                </div>
-                <div className="lg:w-1/3 h-full lg:mb-6">
-                    <div className="xl:h-[50vh] p-6">
-                        <h1 className="text-3xl font-black"> Rochester&apos;s Spot For Authentic Creole Cuisine!</h1>
-                        <p className="text-lg">Step into Frenchman Street and immerse yourself in the lively ambiance of a New Orleans jazz club. The rustic decor, adorned with Mardi Gras colors and jazz-inspired art, creates an inviting and energetic space. Whether you&apos;re enjoying a meal with friends or sipping on a classic cocktail at the bar, our restaurant embodies the vibrant and welcoming spirit of the French Quarter. </p>
-                        <div className='w-full flex'>
-                                <button href="/events" className="mt-4 px-4 py-2 ml-auto bg-white text-black">View Menu</button>
-                        </div>
-                    </div>
-                    <img src="/food.jpg" className="xl:h-[50vh] bottom-0 object-cover"></img>
-                </div>
-                <div className="lg:w-1/3 w-full">
-                    <div className="md:rounded-xl w-full md:flex lg:block">
-                        <div className="w-full md:w-1/2 lg:w-full">
-                            <img src="/food2.jpg" className="w-full object-cover lg:h-[50vh]"></img>
-                        </div>
-                        <div className="w-full p-6 md:w-1/2 lg:w-full xl:h-[50vh]">
-                            <h1 className="text-2xl font-black font-sans"> A Culinary Odyssey: From NOLA to Rochester </h1>
-                            <p className="text-lg"> Discover the culinary magic of our Head Chef at Frenchman Street, whose journey from the vibrant streets of New Orleans to the heart of Rochester&apos;s Frenchman Street has shaped a tantalizing fusion of flavors. With expertise garnered in the lively food scene of New Orleans, our chef brings the soulful essence of Cajun and Creole cuisine to your plate, infusing it with a touch of Rochester&apos;s local charm. Join us for an unforgettable dining experience that embodies the best of both worlds, a testament to our chef&apos;s passion and culinary artistry. </p>
-                            <div className='w-full flex'>
-                                <button href="/events" className="mt-4 px-4 py-2 ml-auto bg-white text-black"> Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div className="p-6 font-sans bg-white">
+            <div className="p-6 font-sans bg-secondary rosewood-font">
                 <h2 className="text-6xl mb-10 border-y-2 border-black py-2"> MENU </h2>
                 <div className="md:flex md:space-x-6 space-y-6 md:space-y-0 pb-6">
                     <div className=" font-semibold">

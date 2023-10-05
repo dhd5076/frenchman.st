@@ -5,12 +5,11 @@ import { MenuAlt1 } from 'heroicons-react';
 
 const Navbar = () => {
   return (
-    <nav className="p-4 fixed top-0 left-0 w-full items-center bg-[#325091] text-white z-50">
-      <div className="md:hidden">
-        <MenuAlt1 className="w-8 h-8" />
-      </div>
-      <div className="hidden container mx-auto md:flex justify-between  items-center">
-        <div className="md:flex space-x-4 text-lg font-bold items-center">
+    <nav className="fixed top-0 left-0 w-full text-white flex bg-accent" id="navbar">
+      <img src="/logo/PrimaryLogo.svg" className="h-[16rem] -my-16">
+      </img>
+      <div className="hidden mx-auto h-32 md:flex justify-between items-center mr-16">
+        <div className="md:flex space-x-16 text-xl font-thin rosewood-font items-center">
           <Link href="/menu">
             Menu
           </Link>
@@ -24,11 +23,6 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <Link href="/contact" className="bg-[#BF0603]/90 inline px-4 py-2 items-center">
-            <span className="block text-lg font-bold items-center" >
-              Order Online
-            </span>
-        </Link>
       </div>
     </nav>
   );
