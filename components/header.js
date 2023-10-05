@@ -1,12 +1,14 @@
 import { MenuAlt1 } from 'heroicons-react';
 
+import Link from 'next/link';
+
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-accent text-white z-50 shadow-md">
       <div className="container mx-auto flex rosewood-font justify-between items-center py-4">
-        <a href="/" className="text-3xl">
+        <Link href="/" className="text-3xl">
           Frenchman Street
-        </a>
+        </Link>
         <div className="hidden md:flex space-x-6 text-lg">
           <a href="/menu" className="hover:text-accent transition duration-300 ease-in-out">
             Menu

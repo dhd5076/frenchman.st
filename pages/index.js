@@ -45,7 +45,7 @@ export default function Home() {
                     <div className="border-b-2 pb-6 w-full">
                         <FadeElement>
                         <h2 className="text-3xl text-white mb-2">Welcome to the Taste of New Orleans</h2>
-                        <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana's rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
+                        <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana&apos;s rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
                         <button className="my-4 bg-secondary block px-4 py-4 ml-auto" onClick={() => scrollToElementById("second")}> Learn More </button>
                         </FadeElement>
                     </div>
