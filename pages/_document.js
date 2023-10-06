@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
       <Html lang="en" className="">
         <Head>
           <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
@@ -17,7 +18,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
         </Head>
-        <body className="bg-no-repeat bg-fill bg-cover bg-center md:bg-fixed bg-[url(/bg2.jpg)]">
+        <body className="bg-no-repeat bg-cover md:bg-fixed bg-center bg-primary md:bg-[url(/bg2.jpg)]">
           <Main />
           <NextScript />
         </body>

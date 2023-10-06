@@ -16,7 +16,7 @@ const FadeElement = ({children}) => {
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5, // Adjust this threshold as needed
+        threshold: 0.25, 
       }
     );
 
@@ -35,8 +35,8 @@ const FadeElement = ({children}) => {
     <div
       ref={elementRef}
       className={`${
-        isVisible ? 'opacity-100' : 'opacity-0 -my-16'
-      } transition-all transform duration-1000 ease-in-out`}
+        isVisible ? 'opacity-100' : 'opacity-0'
+      } transition-all transform duration-[2000ms] ease-in-out h-full`}
     >
       {children}
     </div>
