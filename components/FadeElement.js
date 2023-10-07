@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const FadeElement = ({children}) => {
+const FadeElement = (pageProps) => {
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const children=pageProps.children;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,10 +35,11 @@ const FadeElement = ({children}) => {
 
   return (
     <div
+      id={pageProps.id}
       ref={elementRef}
       className={`${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      } transition-all transform duration-[2000ms] ease-in-out h-full`}
+        isVisible ? pageProps.after : pageProps.before
+      } transition-all transform duration-[1000ms] ease-in-out h-full ${pageProps.className}`}
     >
       {children}
     </div>

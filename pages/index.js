@@ -52,13 +52,13 @@ export default function Home() {
                 <img src="/logo/Frenchman Street Alternate Logo.svg" className={`w-full h-full md:object-cover object-center transition-all delay-500 duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`} alt="Background" />
                 <div className="absolute inset-0 flex flex-col justify-end items-center">
                     <div className="text-white mb-8">
-                    <span className="fas fa-chevron-down text-5xl pb-16 md:pb-0 animate-bounce hover:cursor-pointer" onClick={() => { scrollToElementById("first"); setShowScroll(false) }}></span>
+                    <span className="fas fa-chevron-down shadow-xl opacity-50 hover:opacity-75 text-5xl pb-16 md:pb-0 animate-bounce hover:cursor-pointer" onClick={() => { scrollToElementById("first"); setShowScroll(false) }}></span>
                     </div>
                 </div>
             </div>
 
             </div>
-            <div className="md:flex bg-primary min-h-[100vh]" id="first">
+            <FadeElement before='' className="md:flex bg-primary min-h-[100vh]" id="first">
                 <div className="md:w-1/2 bg-black">
                     <FadeElement>
                         <img src="place.jpg" className="w-full h-full object-cover"/>
@@ -70,50 +70,71 @@ export default function Home() {
                             <div className="border-b-4 pb-6 max-w-lg mr-auto">
                                 <h2 className="text-3xl text-white mb-2">Welcome to the Taste of New Orleans</h2>
                                 <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana&apos;s rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
-                                <button className="my-4 bg-secondary text-black block px-4 py-4 mr-auto" onClick={() => scrollToElementById("second")}> Learn More </button>
+                                <button className="my-4 hover:scale-[1.1] shadow-xl transition-all duration-100 bg-secondary text-black block px-4 py-4 mr-auto" onClick={() => scrollToElementById("second")}> Learn More </button>
                             </div>
                         </FadeElement>
                     </div>
                 </div>
-            </div>
+            </FadeElement>
             <div className="md:flex bg-secondary text-accent min-h-[50vh] md:h-[100vh]" id="second">
                 <div className="md:w-1/2 bg-black order-1">
-                    <FadeElement>
+                    <FadeElement before="opacity-0" after="opacity-100">
                         <img src="chef.jpeg" className="w-full h-full object-cover"/>
                     </FadeElement>
                 </div>
-                <div className="md:w-1/2 p-8 rosewood-font flex flex-col items-center justify-center text-right">
+                <FadeElement className="md:w-1/2 p-8 rosewood-font flex flex-col items-center justify-center text-right">
                     <div className="w-full">
-                        <FadeElement>
+                        <FadeElement before="opacity-0" after="opacity-100">
                             <div className="border-b-4 border-accent pb-6 max-w-lg ml-auto">
                                 <h2 className="text-3xl mb-2">Savor the Culinary Magic of New Orleans: Meet Our Renowned Chef</h2>
                                 <p className="">Explore the rich flavors and vibrant culture of New Orleans through the exquisite creations of our master chef. Get to know the culinary artist behind the enchanting dishes that capture the essence of the Crescent City.</p>
-                                <button className="my-4 bg-primary text-white block px-4 py-4 ml-auto" onClick={() => scrollToElementById("menu")}> View Menu </button>
+                                <button className="my-4 bg-primary hover:scale-[1.1] shadow-xl transition text-white block px-4 py-4 ml-auto" onClick={() => scrollToElementById("menu")}> View Menu </button>
                             </div>
                         </FadeElement>
                     </div>
-                </div>
+                </FadeElement>
             </div>
             <div className="p-6 font-sans bg-black text-white rosewood-font" id="menu">
-                <FadeElement>
-                <Slider slidesToShow={3} autoplay={true} autoplaySpeed={2000} slidesToScroll={1} dots={false} arrows={false} className="bg-black -mx-6 mt-6" infinite={true}>
-                    <img src="/food.jpg" height={256} alt="Image 1" />
-                    <img src="/place.jpg" height={256} alt="Image 1" />
-                    <img src="/bg.jpeg" height={256} alt="Image 1" />
-                    <img src="/bg2.jpg" height={256} alt="Image 1" />
-                </Slider>
+                <FadeElement before='opacity-0 scale-[0.9]' after='opacity-100 scale-1 h-full'>
+                    <Slider 
+                    slidesToShow={3} 
+                    autoplay={true} 
+                    autoplaySpeed={2000} 
+                    slidesToScroll={1} 
+                    dots={false} 
+                    arrows={false}
+                    responsive={[
+                        {
+                          breakpoint: 768,
+                          settings: {
+                            slidesToShow: 1,
+                          },
+                        },
+                      ]} 
+                    className="bg-black -mx-6 mt-6" 
+                    infinite={true}>
+                        <img src="/food.jpg" alt="Image 1" className="h-full"/>
+                        <img src="/bg.jpeg"  alt="Image 1" className="h-full"/>
+                        <img src="/food.jpg" alt="Image 1" className="h-full"/>
+                        <img src="/bg.jpeg"  alt="Image 1" className="h-full"/>
+                    </Slider>
                 </FadeElement>
-                <span className="flex items-end justify-start space-x-6 my-10 pb-2 border-b-2">
-                    <h2 className="text-6xl border-text"> MENU </h2>
-                    <h3 className="hover:border-b-2 hover:cursor-pointer"> Appetizers</h3>
-                    <h3 className="hover:border-b-2 hover:cursor-pointer"> Mains</h3>
-                    <h3 className="hover:border-b-2 hover:cursor-pointer"> Sides</h3>
-                    <h3 className="hover:border-b-2 hover:cursor-pointer"> Drinks</h3>
-                    <h3 className="hover:border-b-2 hover:cursor-pointer"> Desserts</h3>
+                <span className="items-end justify-start b-2 border-b-2">
+                    <div className="flex justify-between">
+                        <h2 className="text-6xl mt-10 mx-6"> MENU </h2>
+                        <button className="my-auto bg-highlight/90 inline-block mt-10  p-4 text-lg text-black shadow-xl transition-all duration-300 hover:scale-[1.1]"> Order Online</button>
+                    </div>
+                    <div className="sm:flex ml-6 sm:space-x-6 mx-6 mb-10 text-lg mt-4">
+                        <h3 className="hover:border-white transition-all duration-300 border-white/25 border-b-2 hover:cursor-pointer"> Appetizers</h3>
+                        <h3 className="hover:border-white transition-all duration-300 border-white/25 border-b-2 hover:cursor-pointer"> Mains</h3>
+                        <h3 className="hover:border-white transition-all duration-300 border-white/25 border-b-2 hover:cursor-pointer"> Sides</h3>
+                        <h3 className="hover:border-white transition-all duration-300  border-white/25 border-b-2 hover:cursor-pointer"> Drinks</h3>
+                        <h3 className="hover:border-white transition-all duration-300 border-white/25 border-b-2 hover:cursor-pointer"> Desserts</h3>
+                    </div>
                 </span>
-                <div className="md:flex flex-wrap grid-cols-3 md:space-x-6 pb-6">
+                <div className="md:flex flex-wrap grid-cols-3 md:space-x-6 pb-6 px-6">
                     <div className="md:w-1/4 font-semibold mt-6 md:mt-0">
-                        <FadeElement>
+                        <FadeElement before='opacity-0' after='opacity-100'>
                         <div>
                             <span className="flex justify-between border-b-2 border-black border-dotted">
                                 <h4 className="text-xl font-normal uppercase"> Jambalaya </h4>
@@ -127,8 +148,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="backdrop-blur bg-gradient-to-r p-6 bg-slate-900">
-                <div className="max-w-xl mx-auto p-6 border-2">
+            <div className="backdrop-blur bg-gradient-to-r p-6">
+                <div className="max-w-xl mx-auto p-6 border-2 bg-black/50">
                     <a className="block text-center mx-auto" href="https://avvinorochester.com">
                         <Image width={1024} height={1024} alt="Logo For Avvino, Text surrounded by curly frills" src="/avvino.png" className="mb-4 px-4 py-2 rounded object-fit" />
                     </a>
