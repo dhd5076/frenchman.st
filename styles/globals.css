@@ -5,23 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
-body {
-  font-family: 'Georgia';
-}
-
-p {
-  font-family: 'Playfair Display';
-}
 
 @font-face {
   font-family: 'Rosewood';
   src: url('/rosewood.woff') format('woff');
+}
+
+p {
+  font-family: 'Robot';
+  font-size: larger;
 }
 
 .offscreen-container {
@@ -40,11 +32,6 @@ p {
   bottom: 0;
 }
 
-.font-consolas {
-  font-family: Consolas, monospace;
-}
-
 .rosewood-font {
-  font-family: 'Rosewood', cursive;
-  /* Use the 'Rosewood' font-family defined above and specify a fallback font if needed */
+  font-family: 'Rosewood';
 }
