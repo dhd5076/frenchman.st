@@ -72,7 +72,7 @@ export default function Home() {
                                 <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana&apos;s rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
                                 <button className=" mt-6 hover:scale-[1.1] transition-all duration-100 bg-secondary text-black block px-4 py-2 font-serif font-bold mr-auto" onClick={() => scrollToElementById("second")}> Learn More </button>
                             </div>
-                            <div className="text-accent p-6 -mx-6 space-y-4 bg-white">
+                            <div className="text-accent p-6 -mx-6 space-y-4 bg-highlight">
                                 <div className="flex">
                                     <span className="fas fa-map-pin w-8"/>
                                     <div className="font-sans">
@@ -186,6 +186,9 @@ export default function Home() {
             </div>
 
             <div className="w-full p-4 text-center text-white bg-black">
+                <div className="">   
+                    <a></a>
+                </div>
                 <span className="text-center w-full block rosewood-font">Copyright &copy; 2023 Frenchman Street</span>
                 <span className="text-xs italic"> Made With ❤️ By <a className="underline" href="https://dylandunn.me">Dylan Dunn</a></span>
             </div>
