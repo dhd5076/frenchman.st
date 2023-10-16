@@ -63,7 +63,7 @@ export default function Home() {
                         <FadeElement before="opacity-0" after="opacity-100" className="flex flex-col justify-between">
                             <div className="pb-6 max-w-lg mr-auto">
                             <h2 className="text-3xl text-white mb-2">Welcome To New Orleans</h2>
-                            <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana's rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
+                            <p className="text-white">Indulge in the vibrant flavors of the Big Easy right here in the heart of Rochester. Our New Orleans-inspired restaurant brings you a taste of Louisiana&apos;s rich culinary heritage with a menu bursting with Cajun and Creole classics. From gumbo to jambalaya, our dishes are crafted with authentic spices and local ingredients, guaranteeing a soulful dining experience that transports you straight to the streets of New Orleans. Join us and savor the magic of the French Quarter in every bite.</p>
                             <Link className="mt-6 hover:scale-[1.1] transition-all duration-100 bg-secondary text-black block px-4 py-2 font-serif font-bold mr-auto inline-block" href="/menu"> View Menu </Link>
                             </div>
                             <div className="text-accent p-6 -mx-6 space-y-4 bg-highlight">
